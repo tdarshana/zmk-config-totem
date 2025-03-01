@@ -19,12 +19,6 @@
 #define SYM  1
 #define FUNC 2
 
-// &mt {
-//  quick-tap-ms = <100>;
-//  global-quick-tap;
-//  flavor = "tap-preferred";
-//  tapping-term-ms = <170>;
-// };
 
 / {
         keymap {
@@ -49,8 +43,8 @@ label= "BASE"                              ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P
-                &kp A       &kp S       &kp D       &kp F       &kp G           &kp H       &kp J       &kp K       &kp L       &kp SCLN
-    &kp ESC     &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp RSFT
+                &kp A       &kp S       &kp D       &kp F       &kp G           &kp H       &kp J       &kp K       &kp L       &kp SEMI
+    &kp ESC     &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp RSHFT
                                         &lt SYM     &kp TAB     &kp SPACE       &kp RET     &kp RCTRL   &lt FUNC
                         >;
                 };
@@ -96,7 +90,7 @@ label= "FUNC"                              ;
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫                ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃   Prev    ┃   Next    ┃   Vol -   ┃   Vol +   ┃ Play/Pause┃                ┃   LEFT    ┃   DOWN    ┃    UP     ┃   RIGHT   ┃     :     ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫                ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃ BT Clr All┃    BT 1   ┃   BT 2    ┃    BT 3   ┃    BT 4   ┃  BT_CLR   ┃                ┃     +     ┃     -     ┃     "     ┃     '     ┃     \     ┃   BSPC    ┃
+// ┃ BT Clr All┃    BT 0   ┃   BT 1    ┃    BT 2   ┃    BT 3   ┃    BT 4   ┃                ┃     +     ┃     -     ┃     "     ┃     '     ┃     \     ┃   BSPC    ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫                ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃   LALT    ┃   LCMD    ┃           ┃                ┃           ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛                ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -105,7 +99,7 @@ label= "FUNC"                              ;
 
                 &kp F1        &kp F2        &kp F3         &kp F4         &kp F5             &kp F6         &kp F7         &kp F8      &kp F9      &kp F10
                 &kp C_PREV    &kp C_NEXT    &kp C_VOL_DN   &kp C_VOL_UP   &kp C_PP           &kp LEFT       &kp DOWN       &kp UP      &kp RIGHT   &kp COLON
-    &bt BT_CLR_ALL  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4   &bt BT_CLR       &kp KP_PLUS    &kp KP_MINUS   &kp DQT     &kp APOS    &kp BSLH     &kp BSPC
+    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4       &kp KP_PLUS    &kp KP_MINUS   &kp DQT     &kp APOS    &kp BSLH     &kp BSPC
                                             &kp LALT       &kp LGUI       &trans             &trans         &trans         &trans
                         >;
                 };
